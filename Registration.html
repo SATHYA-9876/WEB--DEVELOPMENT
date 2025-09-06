@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="j.css">
+</head>
+<style>
+    *{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    body{
+        background-image: url(data:image/jpeg;base64,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);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;padding: 15px ;color:white">REGISTRATION FORM</h2>
+        <link rel="stylesheet" href="shyam.css">
+      <form class="label" onsubmit="return validateForm()">
+  <label>Name</label><br>
+  <input type="text" id="name" placeholder="Enter Your Name"><br>
+  <span class="error" id="nameError" style="color:red"></span><br><br>
+  <label>Email</label><br>
+  <input type="email" id="email" placeholder="Enter Your Email"><br>
+  <span class="error" id="emailError" style="color:red"></span><br><br>
+  <label>Password</label><br>
+  <input type="password" id="password" placeholder="Enter Your Password"><br>
+  <span class="error" id="passwordError" style="color:red"></span><br><br>
+  <label>Confirm Password</label><br>
+  <input type="password" id="confirmPassword" placeholder="Confirm Password"><br>
+  <span class="error" id="confirmPasswordError" style="color:red"></span><br><br>
+  <label>Phone</label><br>
+  <input type="number" id="phone" placeholder="Enter Your Number"><br>
+  <span class="error" id="phoneError" style="color:red"></span><br><br>
+  <button type="submit">Submit</button>
+  </form>
+  <script>
+function validateForm() {
+    let isValid = true;
+    document.querySelectorAll(".error").forEach(e => e.innerText = "");
+    let name = document.getElementById("name").value.trim();
+    if (name === "") {
+        document.getElementById("nameError").innerText = "Name is required";
+        isValid = false;
+    }
+    let email = document.getElementById("email").value.trim();
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!email.match(emailPattern)) {
+        document.getElementById("emailError").innerText = "Enter a valid email";
+        isValid = false;
+    }
+    let password = document.getElementById("password").value;
+    if (password.length < 6) {
+        document.getElementById("passwordError").innerText = "Password must be at least 6 characters";
+        isValid = false;
+    }
+    let confirmPassword = document.getElementById("confirmPassword").value;
+    if (confirmPassword !== password || confirmPassword === "") {
+        document.getElementById("confirmPasswordError").innerText = "Passwords do not match";
+        isValid = false;
+    }
+    let phone = document.getElementById("phone").value.trim();
+    let phonePattern = /^[0-9]{10}$/;
+    if (!phone.match(phonePattern)) {
+        document.getElementById("phoneError").innerText = "Enter 10 digit phone number";
+        isValid = false;
+    }
+    if (isValid) {
+        alert("Registration successfully");
+    }
+    return isValid;
+}
+</script>
+</body>
+</html>
